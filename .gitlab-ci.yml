@@ -5,8 +5,7 @@ mirror_to_github:
   stage: mirror
   image: alpine/git
   script:
-    - git remote add github $GITHUB_REPO_URL
-    - git fetch origin master
-    - git push github master:main
+    - git remote add github "https://${GITHUB_TOKEN}@github.com/cevochka-js/cevochka-js.github.io.git"
+    - git push github master:main --force
   only:
     - master
