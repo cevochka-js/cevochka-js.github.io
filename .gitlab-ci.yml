@@ -1,0 +1,11 @@
+stages:
+  - mirror
+
+mirror_to_github:
+  stage: mirror
+  image: alpine/git
+  script:
+    - git remote add github $GITHUB_REPO_URL
+    - git push --mirror github
+  only:
+    - main
