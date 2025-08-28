@@ -4,6 +4,11 @@ stages:
 mirror_to_github:
   stage: mirror
   image: alpine:latest
+  before_script:
+    - apk update
+    - apk add --no-cache git bash openssh-client
+    - git config --global user.email "vvilkov@lachestry.com"
+    - git config --global user.name "cevochka-js"
   script:
     - git remote add github "https://${GITHUB_TOKEN}@github.com/cevochka-js/cevochka-js.github.io.git"
     - git push github master:main --force
