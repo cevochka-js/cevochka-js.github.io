@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__text {
+    color: red;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+}
+
+.info-block img {
+    width: 30%;
+    height: auto;
+
+    border-radius: 16px;
+}
+
+.info-block li {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info-block ul,
+.info-block ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-block table {
+    margin-top: 10px;
+
+    border-collapse: collapse;
+}
+
+.info-block table th,
+.info-block table td {
+    padding: 0 8px;
+
+    border: 1px gray solid;
+}
+
+.info-block table th:nth-child(1),
+.info-block table td:nth-child(1) {
+    color: green;
+}
+
+.info-block table th:nth-child(2),
+.info-block table td:nth-child(2) {
+    color: red;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.footer-achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-achievement__link {
+    padding: 5px;
+
+    color: white;
+
+    background-color: black;
+    transition: all 0.4s;
+}
+
+.footer-achievement__link:hover {
+    color: black;
+
+    background-color: white;
+}

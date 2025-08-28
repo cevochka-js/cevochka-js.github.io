@@ -1,0 +1,7 @@
+node_modules
+eslint.config.js
+.stylelintrc.json
+package-lock.json
+.prettierrc.cjs
+.eslintrc.js
+.vscode/
