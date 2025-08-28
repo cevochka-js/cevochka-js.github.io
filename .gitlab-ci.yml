@@ -3,7 +3,7 @@ stages:
 
 mirror_to_github:
   stage: mirror
-  image: alpine/git
+  image: alpine:latest
   script:
     - git remote add github "https://${GITHUB_TOKEN}@github.com/cevochka-js/cevochka-js.github.io.git"
     - git push github master:main --force
