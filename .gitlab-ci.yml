@@ -10,7 +10,8 @@ mirror_to_github:
     - git config --global user.email "vvilkov@lachestry.com"
     - git config --global user.name "cevochka-js"
   script:
+    - git remote remove github || true
     - git remote add github "https://${GITHUB_TOKEN}@github.com/cevochka-js/cevochka-js.github.io.git"
-    - git push github master:main --force
+    - git push github HEAD:main --force
   only:
     - master
